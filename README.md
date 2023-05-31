@@ -6,6 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm i @sanity/client`
+### `cd sanity_project`
+### `sanity build`
+### `sanity start`
+### `npm i @sanity/image-url`
+### `npm i @sanity/block-content-to-react`
+
 ### `npm start`
 
 Runs the app in the development mode.\
