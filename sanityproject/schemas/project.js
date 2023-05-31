@@ -9,7 +9,7 @@ export default {
     },
     {
       name: 'date',
-      type: 'dateTime',
+      type: 'datetime',
     },
     {
       name: 'place',
