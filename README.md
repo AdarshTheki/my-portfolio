@@ -1,77 +1,27 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Create React App with the help of Sanity.io backend
 
 ## Available Scripts
 
 In the project directory, you can run:
+```bash
+    npx install create-react-app
+    cd my-portfolio
+    npm start
+    npm run build
 
-### `npm i @sanity/client`
-### `cd sanity_project`
-### `sanity build`
-### `sanity start`
-### `npm i @sanity/image-url`
-### `npm i @sanity/block-content-to-react`
+    npm i @sanity/client
+    cd sanity_project
+    sanity build
+    sanity start
+    npm i @sanity/image-url
+    npm i @sanity/block-content-to-react
+```
+## The function exports a React component 
+* This is a React component called `About` that fetches data from a Sanity.io backend using the `client` object imported from "../client.js". It uses the `useEffect` hook to fetch the data when the component mounts, and the `useState` hook to store the fetched data in the `author` state variable. 
 
-### `npm start`
+* This is a React component that fetches and displays a list of blog posts with their titles and images. @returns This component is returning a list of blog post articles with their titles and main images displayed. Each article is wrapped in a link that leads to the individual blog post page. The data for the posts is fetched from a Sanity.io backend using the `client` object. The fetched data is stored in the `posts` state variable using the `useState` hook and mapped over to display each post using the
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* This is a React component that fetches and displays project data from a Sanity.io database. @returns The `Project` component is being returned, which renders a section containing a list of projects fetched from a Sanity.io database. Each project is displayed in an article element with its title, date, place, description, project type, link, and tags. The project title is a link that opens the project in a new tab.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* The function exports a React component that sets up the routing for a website using React Router and renders various components based on the URL path. @returns The App component is being returned, which contains the BrowserRouter, NavBar, and Routes components. The Routes component contains several Route components that define the paths and components to be rendered for each path.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
