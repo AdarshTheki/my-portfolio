@@ -22,7 +22,7 @@ const About = () => {
     `).then((data) => setAuthor(data)).catch(console.error);
   }, []);
 
-  if (!author) return <div>Loading...</div>;
+  if (!author) return <div className='text-6xl text-center font-semibold '>Loading...</div>;
 
   return (
     <>
