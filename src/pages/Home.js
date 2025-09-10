@@ -4,13 +4,13 @@ import { SocialIcon } from 'react-social-icons';
 
 const Home = () => {
   return (
-    <main className='relative'>
+    <main className='relative max-w-5xl mx-auto'>
       <section className='bg-neutral-900 overflow-hidden flex items-center'>
         <div className='max-w-6xl mx-auto px-4 py-16 relative z-10'>
           <div className='flex flex-col lg:flex-row items-center justify-between gap-10'>
-            <div className='w-full lg:w-5/12 flex justify-center lg:justify-start'>
+            <div className='w-full lg:w-1/3 flex justify-center lg:justify-start'>
               <div className='relative'>
-                <div className='relative w-64 h-64 md:w-80 md:h-80'>
+                <div className='relative w-64 h-64'>
                   <img
                     src='/user.png'
                     alt='image'
@@ -71,12 +71,12 @@ const Home = () => {
 
       {/* About Section */}
       <div className='mx-auto max-w-6xl px-4 py-10 bg-neutral-900 overflow-hidden'>
-        <div className='text-center mb-10'>
-          <h2 className='text-4xl md:text-5xl font-bold text-white mb-4'>About Me</h2>
-          <div className='w-24 h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto'></div>
+        <div className='text-center mb-10 w-fit mx-auto'>
+          <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
+          <div className='w-[80%] h-1 bg-gradient-to-r from-cyan-400 to-purple-600 mx-auto'></div>
         </div>
 
-        <div className='sm:text-center'>
+        <div className=''>
           <p className='text-lg text-gray-300 leading-relaxed'>
             I am a passionate MERN Stack Developer with experience in building end-to-end web
             applications, from scalable backends to responsive frontends. I’ve delivered projects

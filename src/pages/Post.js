@@ -31,13 +31,13 @@ export default function Post() {
           <p className='text-lg text-neutral-300'>Welcome to my collection of blog articles</p>
         </header>
 
-        <div className='grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
+        <div className='grid gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3'>
           {posts.map((post) => (
             <article
               key={post.slug.current}
-              className='bg-opacity-10 bg-neutral-700 rounded-lg hover:scale-95 duration-300'>
+              className='bg-opacity-10 z-10 bg-neutral-700 rounded-2xl overflow-hidden hover:scale-95 duration-300'>
               <Link to={`/post/${post.slug.current}`}>
-                <div className='relative h-64 overflow-hidden rounded-t-lg'>
+                <div className='relative h-48'>
                   <img
                     src={post.mainImage?.asset?.url}
                     alt={post.title}

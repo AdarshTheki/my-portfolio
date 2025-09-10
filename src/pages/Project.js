@@ -35,7 +35,7 @@ const Project = () => {
           {projectData.map((project) => (
             <article
               key={project.link}
-              className='bg-opacity-10 bg-neutral-700 rounded-lg shadow-lg p-6 hover:shadow-xl transition'>
+              className='bg-opacity-10 z-10 bg-neutral-700 rounded-lg shadow-lg p-6 hover:shadow-xl transition'>
               <h3 className='text-2xl font-semibold mb-4'>
                 <a
                   href={project.link}
